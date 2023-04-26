@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class player_master_script : MonoBehaviour
 {
     //500 feels good
@@ -12,7 +13,7 @@ public class player_master_script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -30,17 +31,17 @@ public class player_master_script : MonoBehaviour
 
         //transform.Translate(Vector3.forward * player_speed * Time.deltaTime);
         Rigidbody rb = GetComponent<Rigidbody>();
-         if (Input.GetKey(KeyCode.A))
-             transform.Translate(Vector3.left * player_speed * Time.deltaTime);
-         if (Input.GetKey(KeyCode.D))
-             transform.Translate(Vector3.right * player_speed * Time.deltaTime);
-         if (Input.GetKey(KeyCode.W))
-             transform.Translate(Vector3.forward * player_speed * Time.deltaTime);
-         if (Input.GetKey(KeyCode.S))
-             transform.Translate((Vector3.forward * player_speed * Time.deltaTime) * -1);
+        if (Input.GetKey(KeyCode.A))
+            transform.Translate(Vector3.left * player_speed * Time.deltaTime);
+        if (Input.GetKey(KeyCode.D))
+            transform.Translate(Vector3.right * player_speed * Time.deltaTime);
+        if (Input.GetKey(KeyCode.W))
+            transform.Translate(Vector3.forward * player_speed * Time.deltaTime);
+        if (Input.GetKey(KeyCode.S))
+            transform.Translate((Vector3.forward * player_speed * Time.deltaTime) * -1);
 
         //if(Input.GetKeyDown("space")) {
-         //   GetComponent<RigidBody>().
+        //   GetComponent<RigidBody>().
         //}
     }
 }

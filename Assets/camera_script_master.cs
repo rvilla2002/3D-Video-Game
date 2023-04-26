@@ -2,30 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class camera_script_master : MonoBehaviour
+public class CameraScriptMaster : MonoBehaviour
 {
     public GameObject player;
-    public float camera_speed = 5;
+    public float cameraSpeed = 5;
+    public float distance = 5;
+    public Vector2 pitchLimits = new Vector2(-20, 80);
 
-    private Vector3 offset = new Vector3(0,90,200);
+    private float pitch = 0;
+    private float yaw = 0;
+
     // Start is called before the first frame update
-
     void Start()
     {
-        
+        // Initialize pitch and yaw based on the current camera rotation
+        Vector3 eulerAngles = transform.eulerAngles;
+        pitch = eulerAngles.x;
+        yaw = eulerAngles.y;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //for camera to follow mouse
-        transform.eulerAngles += camera_speed * new Vector3(-Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0);
-        
-        //to stick to player
-        transform.position = player.transform.position + offset;
+        // Update pitch and yaw based on mouse input
+        yaw += cameraSpeed * Input.GetAxis("Mouse X");
+        pitch -= cameraSpeed * Input.GetAxis("Mouse Y");
+        pitch = Mathf.Clamp(pitch, pitchLimits.x, pitchLimits.y);
 
-        //new shit
-        
-
+        // Calculate the new camera position and rotation based on pitch, yaw, and distance
+        Quaternion rotation = Quaternion.Euler(pitch, yaw, 0);
+        Vector3 direction = rotation * new Vector3(0, 0, -distance);
+        transform.position = player.transform.position + direction;
+        transform.LookAt(player.transform.position);
     }
 }
+
