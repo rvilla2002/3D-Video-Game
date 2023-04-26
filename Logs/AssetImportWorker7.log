@@ -1,0 +1,435 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.21f1 (1b156197d683) revision 1774945'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'en' Physical Memory: 31904 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.21f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker7
+-projectPath
+C:/Users/rvill/OneDrive/Documents/GitHub/3D-Video-Game
+-logFile
+Logs/AssetImportWorker7.log
+-srvPort
+60025
+Successfully changed project path to: C:/Users/rvill/OneDrive/Documents/GitHub/3D-Video-Game
+C:/Users/rvill/OneDrive/Documents/GitHub/3D-Video-Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [18004] Host "[IP] 192.168.1.106 [Port] 0 [Flags] 2 [Guid] 2013405828 [EditorId] 2013405828 [Version] 1048832 [Id] WindowsEditor(7,RISHIPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [18004] Host "[IP] 192.168.1.106 [Port] 0 [Flags] 2 [Guid] 2013405828 [EditorId] 2013405828 [Version] 1048832 [Id] WindowsEditor(7,RISHIPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 63.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.21f1 (1b156197d683)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/rvill/OneDrive/Documents/GitHub/3D-Video-Game/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti (ID=0x2207)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   31.0.15.3129
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56356
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003139 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 40.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.338 seconds
+Domain Reload Profiling:
+	ReloadAssembly (338ms)
+		BeginReloadAssembly (44ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (240ms)
+			LoadAssemblies (43ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (55ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (14ms)
+			SetupLoadedEditorAssemblies (143ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (41ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (74ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002759 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\rvill\OneDrive\Documents\GitHub\3D-Video-Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\rvill\OneDrive\Documents\GitHub\3D-Video-Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.534 seconds
+Domain Reload Profiling:
+	ReloadAssembly (535ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (414ms)
+			LoadAssemblies (47ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (140ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (189ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (40ms)
+				ProcessInitializeOnLoadAttributes (132ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3055 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (115.7 KB). Loaded Objects now: 3555.
+Memory consumption went from 127.1 MB to 127.0 MB.
+Total: 3.263400 ms (FindLiveObjects: 0.479600 ms CreateObjectMapping: 0.081600 ms MarkObjects: 2.551200 ms  DeleteObjects: 0.150300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 110916.306556 seconds.
+  path: Assets/Mini Legion Lich PBR HP Polyart/Animations/Lich/Attack02.fbx
+  artifactKey: Guid(e502a5e6e3bfdc34ea7042bbe380e22f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mini Legion Lich PBR HP Polyart/Animations/Lich/Attack02.fbx using Guid(e502a5e6e3bfdc34ea7042bbe380e22f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ab3f2b1bbb1b1767f6be031b7a9627a') in 0.136412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Supercyan Free Forest Sample/Models/Tree/Leaf/forestpack_tree_1_leaf_1.FBX
+  artifactKey: Guid(ef0cc6a746af63e4ea423a4527703c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supercyan Free Forest Sample/Models/Tree/Leaf/forestpack_tree_1_leaf_1.FBX using Guid(ef0cc6a746af63e4ea423a4527703c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40aa1c14cea2451def764c474d7019af') in 0.030325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Mini Legion Footman PBR HP Polyart/Animations/Footman_Attack01.fbx
+  artifactKey: Guid(589612087af5a1d4b9dc9f35c6390cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mini Legion Footman PBR HP Polyart/Animations/Footman_Attack01.fbx using Guid(589612087af5a1d4b9dc9f35c6390cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db8f74694a59ba31a46926a3e72bc00') in 0.027191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Mini Legion Footman PBR HP Polyart/Animations/Footman_Attack02.fbx
+  artifactKey: Guid(a7e26c30a8a5e3547b105bca0bcf0a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mini Legion Footman PBR HP Polyart/Animations/Footman_Attack02.fbx using Guid(a7e26c30a8a5e3547b105bca0bcf0a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6bfce0087fb3f047026485adb0016e8') in 0.028842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Mini Legion Footman PBR HP Polyart/Animations/Footman_Death.fbx
+  artifactKey: Guid(a58aeb722e452254686f56bdc4b22c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mini Legion Footman PBR HP Polyart/Animations/Footman_Death.fbx using Guid(a58aeb722e452254686f56bdc4b22c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '056423bf7df026b3159e6a116f9d6d6d') in 0.033923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Demo/Low poly package/Meshes/Rail 2.fbx
+  artifactKey: Guid(dfdcf9e8bcaf0e24a992bbc9f937f9ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Demo/Low poly package/Meshes/Rail 2.fbx using Guid(dfdcf9e8bcaf0e24a992bbc9f937f9ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590caf6b39e8620a2d7abab2eac56ffa') in 0.010004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Mini Legion Footman PBR HP Polyart/Animations/Footman_Walk.fbx
+  artifactKey: Guid(025e25805572cac40983eaf334adeb92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mini Legion Footman PBR HP Polyart/Animations/Footman_Walk.fbx using Guid(025e25805572cac40983eaf334adeb92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5847ad48e7ed8cb3fc51d6e637680424') in 0.013782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/RPGHero/Meshes/Shield.fbx
+  artifactKey: Guid(9d34b073abce58249a1f664619a13aaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPGHero/Meshes/Shield.fbx using Guid(9d34b073abce58249a1f664619a13aaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7b1b4b6a86bc3fcf4c76b4a89408c7c') in 0.009984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Demo/Low poly package/Meshes/House 1.fbx
+  artifactKey: Guid(81d27301e43454f42bc305511e9a9a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Demo/Low poly package/Meshes/House 1.fbx using Guid(81d27301e43454f42bc305511e9a9a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1d4e60c717e9bacbe4b081c68685f3e') in 0.011710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Demo/Low poly package/Meshes/Grass 2.fbx
+  artifactKey: Guid(11bf877df161f8847b88bfd1340198ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Demo/Low poly package/Meshes/Grass 2.fbx using Guid(11bf877df161f8847b88bfd1340198ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a08eddf5f47be6b5520d07de4d68f2d9') in 0.010899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Supercyan Free Forest Sample/Models/Tree/Treestump/forestpack_tree_stump_1.FBX
+  artifactKey: Guid(ae885d1eef947854ebcd3e9504def7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supercyan Free Forest Sample/Models/Tree/Treestump/forestpack_tree_stump_1.FBX using Guid(ae885d1eef947854ebcd3e9504def7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9df3926a59194c74475b4226a7d3c463') in 0.009709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/RPGHero/Meshes/Stage.fbx
+  artifactKey: Guid(433ba552641724b44889f4b106bec3f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPGHero/Meshes/Stage.fbx using Guid(433ba552641724b44889f4b106bec3f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f71452aebd2e190bff0cd10199a3bb0c') in 0.010742 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/RPGHero/Meshes/PolyartShield.fbx
+  artifactKey: Guid(82d123ce4a1a7824bae34da0dd9e13f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPGHero/Meshes/PolyartShield.fbx using Guid(82d123ce4a1a7824bae34da0dd9e13f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f410e1c7c88939fdb5f1a5b576a137f') in 0.012016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/RPGHero/Meshes/Sword.fbx
+  artifactKey: Guid(64564c9f5e409974297b87494cbe4731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPGHero/Meshes/Sword.fbx using Guid(64564c9f5e409974297b87494cbe4731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a901ed3906b4f459f1b4f18dbe3b0836') in 0.009725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Mini Legion Lich PBR HP Polyart/Animations/Lich/Idle.fbx
+  artifactKey: Guid(d01821c0731788843bdef98c31b20722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mini Legion Lich PBR HP Polyart/Animations/Lich/Idle.fbx using Guid(d01821c0731788843bdef98c31b20722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44047774ef18146047736cb8bedbc0bf') in 0.013024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DogKnight/Mesh/DogPolyart.fbx
+  artifactKey: Guid(a58d63122b09e9144938cd6a1ece4824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DogKnight/Mesh/DogPolyart.fbx using Guid(a58d63122b09e9144938cd6a1ece4824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d2e1dfc411d1e349ca08f6d6cafbcf0') in 0.017534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Demo/Low poly package/Meshes/Mushroom 1.fbx
+  artifactKey: Guid(764990bfa90823e46ab52167ead44b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Demo/Low poly package/Meshes/Mushroom 1.fbx using Guid(764990bfa90823e46ab52167ead44b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6962e27795909ca8443d51035305a212') in 0.009928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DogKnight/Mesh/Stage.fbx
+  artifactKey: Guid(83ccc45f4c0939440a46957a74a54d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DogKnight/Mesh/Stage.fbx using Guid(83ccc45f4c0939440a46957a74a54d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56afe576b3c9ffbbe4cee5c96dfa2778') in 0.010369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Supercyan Free Forest Sample/Models/SignAndBridge/forestpack_roadSign_westEast_1.FBX
+  artifactKey: Guid(fbaae1d077d294940b6ecbec3e9c88eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supercyan Free Forest Sample/Models/SignAndBridge/forestpack_roadSign_westEast_1.FBX using Guid(fbaae1d077d294940b6ecbec3e9c88eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c988fc6974bd9c8b2ed39716a9daed44') in 0.008979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/RPGHero/Meshes/NewFreeRPGHero.fbx
+  artifactKey: Guid(9ce6002518e821e43b4f97c76700fbac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPGHero/Meshes/NewFreeRPGHero.fbx using Guid(9ce6002518e821e43b4f97c76700fbac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48f371968605d4e73f8e05cf85b871dc') in 0.013924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Demo/Low poly package/Meshes/Terrain small.fbx
+  artifactKey: Guid(318fadd2b1b0e5249ae9724f424afc96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Demo/Low poly package/Meshes/Terrain small.fbx using Guid(318fadd2b1b0e5249ae9724f424afc96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff97910c01155f719eaff8611a27e133') in 0.010456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Mini Legion Footman PBR HP Polyart/Meshes/Stage.fbx
+  artifactKey: Guid(b0cd5d960f7f8d543a2ac7b1a551ad4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mini Legion Footman PBR HP Polyart/Meshes/Stage.fbx using Guid(b0cd5d960f7f8d543a2ac7b1a551ad4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4e3524c18499a00350d0c9ad53ee577') in 0.010166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Mini Legion Footman PBR HP Polyart/Animations/Footman_GetHit.fbx
+  artifactKey: Guid(2d692e106dad285448e3dd45e5a3a3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mini Legion Footman PBR HP Polyart/Animations/Footman_GetHit.fbx using Guid(2d692e106dad285448e3dd45e5a3a3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd34c52f2cad9cb26e1ecbc439d92da97') in 0.013775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Mini Legion Lich PBR HP Polyart/Animations/Lich/Die.fbx
+  artifactKey: Guid(b161d64d0b842484a8dfe278b2bc0b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mini Legion Lich PBR HP Polyart/Animations/Lich/Die.fbx using Guid(b161d64d0b842484a8dfe278b2bc0b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c04352af647453fe400a7629fee56f45') in 0.012091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Mini Legion Footman PBR HP Polyart/Animations/Footman_Idle.fbx
+  artifactKey: Guid(269a4022d09a5a644bd0117939ee73c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mini Legion Footman PBR HP Polyart/Animations/Footman_Idle.fbx using Guid(269a4022d09a5a644bd0117939ee73c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '336fd2359e69e654960e8b025c2914df') in 0.011987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Demo/Low poly package/Meshes/House 2.fbx
+  artifactKey: Guid(3744ee65f65091d46b84f99ce8173880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Demo/Low poly package/Meshes/House 2.fbx using Guid(3744ee65f65091d46b84f99ce8173880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e731bc3e3fdedb9469290463d43c9041') in 0.010500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Demo/Low poly package/Meshes/Rail 3.fbx
+  artifactKey: Guid(7d1c70cfe1c337140a342660171840ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Demo/Low poly package/Meshes/Rail 3.fbx using Guid(7d1c70cfe1c337140a342660171840ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8df417078d53f589e3976620381fa72') in 0.010057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/DogKnight/Mesh/ShieldPolyart.fbx
+  artifactKey: Guid(b20cb9cb9197fb64a830cea6c0550d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DogKnight/Mesh/ShieldPolyart.fbx using Guid(b20cb9cb9197fb64a830cea6c0550d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88bfb050ed279269aa5f93ddc6c9c0c3') in 0.009867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Mini Legion Grunt PBR HP Polyart/Mesh/Grunt.fbx
+  artifactKey: Guid(406486edf02d8d74da3b2ca225e21254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mini Legion Grunt PBR HP Polyart/Mesh/Grunt.fbx using Guid(406486edf02d8d74da3b2ca225e21254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6a5f35bc17ed8204539c6f701099088') in 0.012344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Demo/Low poly package/Meshes/Fence 3.fbx
+  artifactKey: Guid(8059e69270901ec409f50d1181c168b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Demo/Low poly package/Meshes/Fence 3.fbx using Guid(8059e69270901ec409f50d1181c168b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80b1bebfd41227e9d91f66294ba549a0') in 0.009934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Mini Legion Footman PBR HP Polyart/Animations/Footman_Defend.fbx
+  artifactKey: Guid(6a749996f6efd964b8535576cb58265b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mini Legion Footman PBR HP Polyart/Animations/Footman_Defend.fbx using Guid(6a749996f6efd964b8535576cb58265b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c7dfe7b8c004cd07ec8bd2486407889') in 0.012386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Mini Legion Footman PBR HP Polyart/Meshes/Footman_Default.fbx
+  artifactKey: Guid(d06688f72e50aaa48b0dea3435bfe092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mini Legion Footman PBR HP Polyart/Meshes/Footman_Default.fbx using Guid(d06688f72e50aaa48b0dea3435bfe092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0071c1bdcfd2df5c4267403726271f10') in 0.015081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Mini Legion Footman PBR HP Polyart/Animations/Footman_Victory.fbx
+  artifactKey: Guid(336bd171ee23b7f40a82b613bc6c7944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mini Legion Footman PBR HP Polyart/Animations/Footman_Victory.fbx using Guid(336bd171ee23b7f40a82b613bc6c7944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65e16a689280b5f4bbdb8333c93b6b32') in 0.011448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Supercyan Free Forest Sample/Models/Foliage/Mushroom/forestpack_foliage_mushroom_red_small.FBX
+  artifactKey: Guid(44b03eaa872f141408d84aad99e0175f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supercyan Free Forest Sample/Models/Foliage/Mushroom/forestpack_foliage_mushroom_red_small.FBX using Guid(44b03eaa872f141408d84aad99e0175f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92fe90c6cd14044d6809a210cc11495a') in 0.008641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Bretwalda Steam Locomotive/Model/locomotive.fbx
+  artifactKey: Guid(dca7e3d8d92978a4e81f8f8d23018524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bretwalda Steam Locomotive/Model/locomotive.fbx using Guid(dca7e3d8d92978a4e81f8f8d23018524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39d0ab4a5a04bb64f7ffed37767e7376') in 0.011495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Supercyan Free Forest Sample/Models/Stone/forestpack_stone_large_1_meshCollider.FBX
+  artifactKey: Guid(c3199ed8a622e464b8357f9974d55417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supercyan Free Forest Sample/Models/Stone/forestpack_stone_large_1_meshCollider.FBX using Guid(c3199ed8a622e464b8357f9974d55417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81df4de1c6c40244bd4f044d7e5c1cd9') in 0.009402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Supercyan Free Forest Sample/Models/Tree/Fir/forestpack_tree_fir_tall_meshCollider.FBX
+  artifactKey: Guid(1c39accf3fc812b46a89b53030f37397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supercyan Free Forest Sample/Models/Tree/Fir/forestpack_tree_fir_tall_meshCollider.FBX using Guid(1c39accf3fc812b46a89b53030f37397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '562dee18112184be1b8d19724dcbc429') in 0.010746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Demo/Low poly package/Meshes/Bench.fbx
+  artifactKey: Guid(78334f308fdf9374fa59df5b351c8d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Demo/Low poly package/Meshes/Bench.fbx using Guid(78334f308fdf9374fa59df5b351c8d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49455a927bebaf2a9ffd3f7b70c46794') in 0.012052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Demo/Low poly package/Meshes/Rail 1.fbx
+  artifactKey: Guid(665311910eca00a4aaacb5a51b2bb8b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Demo/Low poly package/Meshes/Rail 1.fbx using Guid(665311910eca00a4aaacb5a51b2bb8b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6bd7635afbbd96727fc9dcaeb5d72ff') in 0.010270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Supercyan Free Forest Sample/Models/Stone/forestpack_stone_medium_1_meshCollider.FBX
+  artifactKey: Guid(55074be14ca189546894da68b8899b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supercyan Free Forest Sample/Models/Stone/forestpack_stone_medium_1_meshCollider.FBX using Guid(55074be14ca189546894da68b8899b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2297fabb02d15852fd4e69907d9ecc3d') in 0.009654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Supercyan Free Forest Sample/Models/Stone/forestpack_stone_medium_1.fbx
+  artifactKey: Guid(9ff0ab7be26787c49a4748d4bfa19e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supercyan Free Forest Sample/Models/Stone/forestpack_stone_medium_1.fbx using Guid(9ff0ab7be26787c49a4748d4bfa19e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66f85640186e168107b13173337f959f') in 0.009761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Demo/Low poly package/Meshes/Fence 2.fbx
+  artifactKey: Guid(0508ea79af439414aba735ea78e9c654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Demo/Low poly package/Meshes/Fence 2.fbx using Guid(0508ea79af439414aba735ea78e9c654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef2726304de1f0379f0d1cadf049a528') in 0.012204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DogKnight/Mesh/DogPBR.fbx
+  artifactKey: Guid(d9a1483b77bf10e4e851678ab6c2e54e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DogKnight/Mesh/DogPBR.fbx using Guid(d9a1483b77bf10e4e851678ab6c2e54e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6308dc353d65a982016d23be464f4471') in 0.014662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/RPGHero/Meshes/PolyartSword.fbx
+  artifactKey: Guid(8e748ab8b2b891145b67425cad73aebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPGHero/Meshes/PolyartSword.fbx using Guid(8e748ab8b2b891145b67425cad73aebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb31148485601181e230b4becd8907f') in 0.011096 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
