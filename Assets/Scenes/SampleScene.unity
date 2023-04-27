@@ -6904,9 +6904,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1649867361}
   distance: 200
-  height: 1000
+  height: 3000
   rotationDamping: 10
-  zoomSpeed: 2
+  zoomSpeed: 20
   minZoomDistance: 2
   maxZoomDistance: 500
   minVerticalAngle: -80

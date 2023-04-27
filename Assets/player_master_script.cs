@@ -9,11 +9,13 @@ public class player_master_script : MonoBehaviour
     public float player_speed = 500;
     public Camera cam;
 
+    private Animator animator;
+
 
     // Start is called before the first frame update
     void Start()
     {
-
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -29,17 +31,26 @@ public class player_master_script : MonoBehaviour
         transform.LookAt(finalPoint, Vector3.up);
         ////////////////////////////////////////////////////////////////////////////
 
-        //transform.Translate(Vector3.forward * player_speed * Time.deltaTime);
         Rigidbody rb = GetComponent<Rigidbody>();
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A)) {
             transform.Translate(Vector3.left * player_speed * Time.deltaTime);
-        if (Input.GetKey(KeyCode.D))
+            animator.SetBool("isMoving", true);
+        }
+        else if (Input.GetKey(KeyCode.D)) {
             transform.Translate(Vector3.right * player_speed * Time.deltaTime);
-        if (Input.GetKey(KeyCode.W))
+            animator.SetBool("isMoving", true);
+        }
+        else if (Input.GetKey(KeyCode.W)) {
             transform.Translate(Vector3.forward * player_speed * Time.deltaTime);
-        if (Input.GetKey(KeyCode.S))
+            animator.SetBool("isMoving", true);
+        }
+        else if (Input.GetKey(KeyCode.S)) {
             transform.Translate((Vector3.forward * player_speed * Time.deltaTime) * -1);
-
+            animator.SetBool("isMoving", true);
+        }
+        else {
+            animator.SetBool("isMoving", false);
+        }
         //if(Input.GetKeyDown("space")) {
         //   GetComponent<RigidBody>().
         //}
