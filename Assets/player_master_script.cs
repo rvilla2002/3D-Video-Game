@@ -15,6 +15,8 @@ public class player_master_script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        //allows the character to access animations
         animator = GetComponent<Animator>();
     }
 
@@ -31,9 +33,11 @@ public class player_master_script : MonoBehaviour
         transform.LookAt(finalPoint, Vector3.up);
         ////////////////////////////////////////////////////////////////////////////
 
+        //checks if any key was pressed
         Rigidbody rb = GetComponent<Rigidbody>();
         if (Input.GetKey(KeyCode.A)) {
             transform.Translate(Vector3.left * player_speed * Time.deltaTime);
+            //changes isMoving to true, which allows the game to run running animation
             animator.SetBool("isMoving", true);
         }
         else if (Input.GetKey(KeyCode.D)) {
@@ -49,6 +53,7 @@ public class player_master_script : MonoBehaviour
             animator.SetBool("isMoving", true);
         }
         else {
+            //if no key was pressed, person not moving, so isMoving is false, to start idle animation.
             animator.SetBool("isMoving", false);
         }
         //if(Input.GetKeyDown("space")) {
