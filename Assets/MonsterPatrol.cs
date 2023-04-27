@@ -11,14 +11,24 @@ public class MonsterPatrol : MonoBehaviour
     private int currentWaypointIndex = 0;
     private Animator animator;
 
+    //stuff im using, to not mess up ur script
+    public float detectionRadius = 500f; // the radius around the monster that triggers detection
+    public float moveSpeed = 70f; // the speed at which the monster moves towards the player
+    
+    private Transform player; // reference to the player's transform component
+    private bool playerInRange = false; // flag to track if player is within detection range
+
     void Start()
     {
         animator = GetComponent<Animator>();
+        //new stuff
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()
     {
-        Patrol();
+        //Patrol();
+        chase_player();
     }
 
     private void Patrol()
@@ -43,6 +53,27 @@ public class MonsterPatrol : MonoBehaviour
         {
             currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Count;
             animator.SetBool("isWalking", false);
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////
+    private void chase_player() {
+        if (Vector3.Distance(transform.position, player.position) <= detectionRadius) {
+            //print("Player in Range is true");
+            playerInRange = true;
+            animator.SetBool("has_detected_player", true);
+        }
+        else {
+            playerInRange = false;
+            animator.SetBool("has_detected_player", false);
+            Patrol();
+        }
+        
+        if (playerInRange) {
+            print("Entering player in range script");
+            transform.LookAt(player);
+            transform.position = Vector3.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+
         }
     }
 }
