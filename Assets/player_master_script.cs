@@ -18,6 +18,9 @@ public class player_master_script : MonoBehaviour
 
     private HealthBarController healthBarController;
 
+    public LayerMask monsterLayer;
+
+
     void Start()
     {
         healthBarController = GetComponentInChildren<HealthBarController>();
@@ -83,7 +86,7 @@ public class player_master_script : MonoBehaviour
         isAttacking = true;
         animator.SetBool("isAttacking", true);
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, attackDistance))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, attackDistance, monsterLayer))
         {
             MonsterPatrol monster = hit.transform.GetComponent<MonsterPatrol>();
             if (monster != null)
@@ -108,9 +111,10 @@ public class player_master_script : MonoBehaviour
             animator.SetBool("isHit", true);
             Invoke("ResetIsHit", 0.5f);
         }
-        float percentage = (float)hitPoints / maxHealth;
+        float percentage = Mathf.Clamp01((float)hitPoints / maxHealth);
         healthBarController.UpdateHealthBar(percentage);
     }
+
 
 
     private void ResetIsHit()
