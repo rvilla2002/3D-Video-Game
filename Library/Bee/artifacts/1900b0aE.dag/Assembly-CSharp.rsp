@@ -348,6 +348,7 @@
 "Assets/camera_script_master.cs"
 "Assets/Demo/Low poly package/Scripts/GameHandler.cs"
 "Assets/Demo/Low poly package/Scripts/ScreenshotHandler.cs"
+"Assets/HealthBarController.cs"
 "Assets/MonsterPatrol.cs"
 "Assets/Mountain Terrain/Misc/CameraOrbit.cs"
 "Assets/player_master_script.cs"
