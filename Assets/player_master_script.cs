@@ -13,6 +13,7 @@ public class player_master_script : MonoBehaviour
     public int attackValue = 10;
     public float attackDistance = 100f;
 
+    private bool isPlayingSound = false;
 
     private Animator animator;
     private bool isAttacking = false;
@@ -22,6 +23,7 @@ public class player_master_script : MonoBehaviour
 
     public LayerMask monsterLayer;
 
+    [SerializeField] private AudioSource moveSoundEffect;
 
     void Start()
     {
@@ -55,21 +57,37 @@ public class player_master_script : MonoBehaviour
             {
                 transform.Translate(Vector3.left * player_speed * Time.deltaTime);
                 animator.SetBool("isMoving", true);
+                
+                if (!isPlayingSound) {
+                    StartCoroutine(PlaySoundWithDelay());
+                }
             }
             else if (Input.GetKey(KeyCode.D))
             {
                 transform.Translate(Vector3.right * player_speed * Time.deltaTime);
                 animator.SetBool("isMoving", true);
+
+                if (!isPlayingSound) {
+                    StartCoroutine(PlaySoundWithDelay());
+                }
             }
             else if (Input.GetKey(KeyCode.W))
             {
                 transform.Translate(Vector3.forward * player_speed * Time.deltaTime);
                 animator.SetBool("isMoving", true);
+
+                if (!isPlayingSound) {
+                    StartCoroutine(PlaySoundWithDelay());
+                }
             }
             else if (Input.GetKey(KeyCode.S))
             {
                 transform.Translate((Vector3.forward * player_speed * Time.deltaTime) * -1);
                 animator.SetBool("isMoving", true);
+
+                if (!isPlayingSound) {
+                    StartCoroutine(PlaySoundWithDelay());
+                }
             }
             else
             {
@@ -125,5 +143,12 @@ public class player_master_script : MonoBehaviour
     private void ResetIsHit()
     {
         animator.SetBool("isHit", false);
+    }
+
+    IEnumerator PlaySoundWithDelay() {
+        isPlayingSound = true;
+        moveSoundEffect.Play();
+        yield return new WaitForSeconds(1f);
+        isPlayingSound = false;
     }
 }

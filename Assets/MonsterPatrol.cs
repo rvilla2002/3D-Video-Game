@@ -29,7 +29,8 @@ public class MonsterPatrol : MonoBehaviour
 
     private HealthBarController healthBarController;
 
-
+    private bool isPlayingSound = false;
+    [SerializeField] private AudioSource moveSoundEffect;
 
     void Start()
     {
@@ -98,6 +99,10 @@ public class MonsterPatrol : MonoBehaviour
         {
             transform.LookAt(player);
 
+            if (!isPlayingSound) {
+                    StartCoroutine(PlaySoundWithDelay());
+                }
+
             if (distanceToPlayer > attackDistance)
             {
                 transform.position = Vector3.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
@@ -162,6 +167,13 @@ public class MonsterPatrol : MonoBehaviour
     private void ResetIsHit()
     {
         animator.SetBool("isHit", false);
+    }
+
+    IEnumerator PlaySoundWithDelay() {
+        isPlayingSound = true;
+        moveSoundEffect.Play();
+        yield return new WaitForSeconds(2.5f);
+        isPlayingSound = false;
     }
 
 }
