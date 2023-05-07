@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.SceneManagement;
+
 public class player_master_script : MonoBehaviour
 {
     public float player_speed = 500;
@@ -105,6 +107,7 @@ public class player_master_script : MonoBehaviour
         if (hitPoints <= 0)
         {
             animator.SetBool("isDead", true);
+            SceneManager.LoadScene("game_over");
         }
         else
         {
