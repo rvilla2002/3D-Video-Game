@@ -46,12 +46,23 @@ public class player_master_script : MonoBehaviour
     {   
         if(!PauseMenu.isPaused) {
             // Converting the mouse position to a point in 3D-space
-            Vector3 point = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1));
+            //Vector3 point = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1));
             // Using some math to calculate the point of intersection between the line going through the camera and the mouse position with the XZ-Plane
-            float t = cam.transform.position.y / (cam.transform.position.y - point.y);
-            Vector3 finalPoint = new Vector3(t * (point.x - cam.transform.position.x) + cam.transform.position.x, 1, t * (point.z - cam.transform.position.z) + cam.transform.position.z);
+            //float t = cam.transform.position.y / (cam.transform.position.y - point.y);
+            //Vector3 finalPoint = new Vector3(t * (point.x - cam.transform.position.x) + cam.transform.position.x, 1, t * (point.z - cam.transform.position.z) + cam.transform.position.z);
             // Rotating the object to that point
-            transform.LookAt(finalPoint, Vector3.up);
+            //transform.LookAt(finalPoint, Vector3.up);
+            Vector3 pointOnPlane = GetPointOnXZPlane(Input.mousePosition);
+
+            // Calculate the vector pointing from the player to the point on the plane
+            Vector3 lookDirection = pointOnPlane - transform.position;
+
+            // Rotate the player to face the point on the plane
+            transform.rotation = Quaternion.LookRotation(lookDirection);
+
+            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+
+
             // Checks if any key was pressed
             if (Input.GetKey(KeyCode.A))
             {
@@ -82,7 +93,7 @@ public class player_master_script : MonoBehaviour
             }
             else if (Input.GetKey(KeyCode.S))
             {
-                transform.Translate((Vector3.forward * player_speed * Time.deltaTime) * -1);
+                transform.Translate((Vector3.back * player_speed * Time.deltaTime));
                 animator.SetBool("isMoving", true);
 
                 if (!isPlayingSound) {
@@ -101,6 +112,21 @@ public class player_master_script : MonoBehaviour
             }
         }
 
+    }
+
+    private Vector3 GetPointOnXZPlane(Vector3 screenPoint)
+    {
+        // Cast a ray from the camera to the point on the screen
+        Ray ray = cam.ScreenPointToRay(screenPoint);
+
+        // Calculate the distance from the camera to the XZ-plane
+        float distanceToPlane = ray.origin.y / -ray.direction.y;
+
+        // Calculate the point on the plane where the ray intersects
+        Vector3 pointOnPlane = ray.GetPoint(distanceToPlane);
+
+        // Return the point on the plane
+        return pointOnPlane;
     }
 
     IEnumerator TriggerAttack()
