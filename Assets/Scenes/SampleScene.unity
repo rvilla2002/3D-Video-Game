@@ -4729,7 +4729,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.37
+  m_Radius: 0.95
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.61, z: 0}
@@ -4875,10 +4875,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.37
+  m_Radius: 0.95
   m_Height: 1.5
   m_Direction: 1
-  m_Center: {x: 0, y: 0.61, z: 0}
+  m_Center: {x: 0, y: 0.79, z: 0}
 --- !u!4 &624960812 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8422892626600249584, guid: 214e08cd5e5d74c458e2a81b7ec2c84c, type: 3}
@@ -7831,7 +7831,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 100000
   field of view: 60.7
   orthographic: 0
   orthographic size: 5
@@ -7878,14 +7878,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1649867361}
-  distance: 250
+  distance: 350
   height: 250
-  rotationDamping: 10
-  zoomSpeed: 20
+  rotationDamping: 20
+  zoomSpeed: 50
   minZoomDistance: 200
   maxZoomDistance: 2000
-  minVerticalAngle: -80
-  maxVerticalAngle: 80
+  minVerticalAngle: 10
+  maxVerticalAngle: 30
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10003,7 +10003,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.37
+  m_Radius: 0.95
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.61, z: 0}
@@ -13626,14 +13626,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649867353}
   serializedVersion: 2
-  m_Mass: 2000
+  m_Mass: 100
   m_Drag: 0
   m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 3
 --- !u!136 &1649867358
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13664,11 +13664,11 @@ MonoBehaviour:
   cam: {fileID: 963194227}
   maxHealth: 100
   hitPoints: 100
-  attackValue: 10
-  attackDistance: 100
+  attackValue: 50
+  attackDistance: 200
   monsterLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   moveSoundEffect: {fileID: 1649867363}
 --- !u!4 &1649867361 stripped
 Transform:
@@ -17367,7 +17367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8422892626600249584, guid: 214e08cd5e5d74c458e2a81b7ec2c84c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.9
+      value: 39.9
       objectReference: {fileID: 0}
     - target: {fileID: 8422892626600249584, guid: 214e08cd5e5d74c458e2a81b7ec2c84c, type: 3}
       propertyPath: m_LocalPosition.z

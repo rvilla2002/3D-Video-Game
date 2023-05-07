@@ -4,14 +4,15 @@ using UnityEngine;
 
 using UnityEngine.SceneManagement;
 
-public class player_master_script : MonoBehaviour
-{
+public class player_master_script : MonoBehaviour {
     public float player_speed = 500;
     public Camera cam;
     public int maxHealth = 100;
     public int hitPoints = 100;
     public int attackValue = 10;
     public float attackDistance = 100f;
+
+    public float radius = 30.5f;
 
     private bool isPlayingSound = false;
 
@@ -133,12 +134,17 @@ public class player_master_script : MonoBehaviour
     {
         isAttacking = true;
         animator.SetBool("isAttacking", true);
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, attackDistance, monsterLayer))
-        {
-            MonsterPatrol monster = hit.transform.GetComponent<MonsterPatrol>();
-            if (monster != null)
-            {
+        //NEW SHIT HERE IF SOMETHIGN BREAKS CHECK HERER FIRST
+        Vector3 origin = transform.position;
+        Vector3 direction = transform.forward;
+        float maxDistance = attackDistance;
+
+        Collider[] hitColliders = Physics.OverlapSphere(origin, radius, monsterLayer);
+
+        for (int i = 0; i < hitColliders.Length; i++) {
+            Collider collider = hitColliders[i];
+            MonsterPatrol monster = collider.GetComponent<MonsterPatrol>();
+            if (monster != null) {
                 monster.TakeDamage(attackValue);
             }
         }
@@ -158,7 +164,7 @@ public class player_master_script : MonoBehaviour
         else
         {
             animator.SetBool("isHit", true);
-            Invoke("ResetIsHit", 0.5f);
+            Invoke("ResetIsHit", 0.05f);
         }
         float percentage = Mathf.Clamp01((float)hitPoints / maxHealth);
         healthBarController.UpdateHealthBar(percentage);

@@ -66,6 +66,7 @@ public class MonsterPatrol : MonoBehaviour
             // Rotate the monster towards the target waypoint
             Quaternion targetRotation = Quaternion.LookRotation(direction);
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
+            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
 
             animator.SetBool("isWalking", true);
             animator.SetBool("isIdle", false);
@@ -98,6 +99,7 @@ public class MonsterPatrol : MonoBehaviour
         if (playerInRange)
         {
             transform.LookAt(player);
+            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
 
             if (!isPlayingSound) {
                     StartCoroutine(PlaySoundWithDelay());
@@ -113,6 +115,7 @@ public class MonsterPatrol : MonoBehaviour
             }
             else
             {
+                //pretty sure this here is causing the problem
                 if (Time.time > lastAttackTime + attackCooldown)
                 {
                     animator.SetBool("isRunning", false);
@@ -152,11 +155,18 @@ public class MonsterPatrol : MonoBehaviour
         if (monsterHitPoints <= 0)
         {
             animator.SetBool("isDead", true);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+            moveSpeed = 0;
+            attackDamage = 0;
+            detectionRadius = 0;
+            patrolSpeed = 0;
+
+
         }
         else
         {
             animator.SetBool("isHit", true);
-            Invoke("ResetIsHit", 0.5f);
+            Invoke("ResetIsHit", 0.05f);
         }
         float percentage = Mathf.Clamp01((float)monsterHitPoints / maxHealth);
         healthBarController.UpdateHealthBar(percentage);
@@ -174,6 +184,12 @@ public class MonsterPatrol : MonoBehaviour
         moveSoundEffect.Play();
         yield return new WaitForSeconds(2.5f);
         isPlayingSound = false;
+    }
+
+    private void monsterDead() {
+        while(true) {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
     }
 
 }
