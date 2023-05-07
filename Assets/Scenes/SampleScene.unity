@@ -1683,7 +1683,7 @@ AudioSource:
   m_GameObject: {fileID: 153129352}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 44a69a78e21292c47a2a50be49ecb02d, type: 2}
   m_audioClip: {fileID: 8300000, guid: 47f45ef7b5767674393cc401fc325705, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
@@ -4718,6 +4718,7 @@ MonoBehaviour:
   attackDamage: 10
   attackDistance: 150
   attackCooldown: 3
+  moveSoundEffect: {fileID: 0}
 --- !u!136 &616691032
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4767,6 +4768,7 @@ MonoBehaviour:
   attackDamage: 10
   attackDistance: 150
   attackCooldown: 3
+  moveSoundEffect: {fileID: 0}
 --- !u!136 &624960810
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7597,6 +7599,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7691,6 +7694,22 @@ MonoBehaviour:
   maxZoomDistance: 2000
   minVerticalAngle: -80
   maxVerticalAngle: 80
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daf4bb199632c4c4aaab41d6bdb8c903, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensitivitySlider: {fileID: 0}
+  playerCamera: {fileID: 963194228}
+  volumeSlider: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &964682161
 GameObject:
   m_ObjectHideFlags: 0
@@ -9784,6 +9803,7 @@ MonoBehaviour:
   attackDamage: 10
   attackDistance: 150
   attackCooldown: 3
+  moveSoundEffect: {fileID: 0}
 --- !u!136 &1274178442
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13364,6 +13384,7 @@ MonoBehaviour:
   monsterLayer:
     serializedVersion: 2
     m_Bits: 0
+  moveSoundEffect: {fileID: 0}
 --- !u!4 &1649867361 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4086279202973348, guid: c20397bf1592dc040b827e8716b0bd41, type: 3}
@@ -15683,6 +15704,7 @@ MonoBehaviour:
   attackDamage: 10
   attackDistance: 3
   attackCooldown: 3
+  moveSoundEffect: {fileID: 0}
 --- !u!1 &1957464996
 GameObject:
   m_ObjectHideFlags: 0
@@ -16595,6 +16617,7 @@ MonoBehaviour:
   attackDamage: 10
   attackDistance: 3
   attackCooldown: 3
+  moveSoundEffect: {fileID: 0}
 --- !u!1 &2019435969
 GameObject:
   m_ObjectHideFlags: 0
@@ -18012,6 +18035,7 @@ MonoBehaviour:
   attackDamage: 10
   attackDistance: 3
   attackCooldown: 3
+  moveSoundEffect: {fileID: 0}
 --- !u!1 &2139016974
 GameObject:
   m_ObjectHideFlags: 0
