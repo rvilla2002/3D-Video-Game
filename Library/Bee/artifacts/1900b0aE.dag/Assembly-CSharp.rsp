@@ -352,6 +352,7 @@
 "Assets/MainMenu.cs"
 "Assets/MonsterPatrol.cs"
 "Assets/Mountain Terrain/Misc/CameraOrbit.cs"
+"Assets/PauseMenu.cs"
 "Assets/player_master_script.cs"
 "Assets/scripts/player_movement.cs"
 "Assets/SettingsMenu.cs"
